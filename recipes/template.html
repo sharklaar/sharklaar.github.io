@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title><!-- Recipe title --></title>
+  <title>RECIPE TITLE – Shark Attack Kitchen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- If this file lives in /recipes/, keep ../ -->
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
@@ -16,41 +15,57 @@
 
 <main class="recipe-card">
 
-  <!-- =========================
-       TITLE + HERO IMAGE
-       ========================= -->
-  <h2><!-- Recipe name --></h2>
+  <!-- Back link -->
+  <nav class="breadcrumb">
+    <a href="../index.html" class="home-link">← Back to the recipe locker</a>
+  </nav>
 
+  <!-- Recipe title -->
+  <h2>
+    RECIPE NAME<br>
+    <span class="subtitle">Optional subtitle / clarification</span>
+  </h2>
+
+  <!-- Hero image -->
   <img
     src="../images/RECIPE-IMAGE.jpg"
-    alt="Describe the finished dish"
+    alt="Describe the finished dish clearly"
     class="recipe-image"
   />
 
-  <!-- =========================
-       META
-       ========================= -->
-  <section class="meta">
-    <span>🍽️ Serves: <!-- e.g. 1–2 --></span>
-    <span>🔥 Heat: <!-- e.g. 7.5 / 10 --></span>
-    <span>⏱️ Expected total time: <strong><!-- e.g. 45 mins --></strong></span>
+  <!-- Disclaimer -->
+  <section class="notes disclaimer">
+    <h3>A quick note</h3>
+    <p>
+      I’m not a trained or qualified chef. I’ve never worked in a professional kitchen,
+      and my presentation still needs work. This site exists because I’m on a learning
+      journey — cooking, tasting, screwing things up, fixing them, and trying to get
+      better as I go.
+    </p>
+    <p>
+      What I do take seriously is understanding <strong>why</strong> things work.
+      If this sounds over-analysed, that’s deliberate.
+    </p>
   </section>
 
-  <!-- =========================
-       HOW THIS RUNS
-       ========================= -->
+  <!-- Meta -->
+  <section class="meta">
+    <span>🍽️ Serves: X</span>
+    <span>🔥 Heat: X / 10</span>
+    <span>⏱️ Expected total time: <strong>~XX minutes</strong></span>
+  </section>
+
+  <!-- How it runs -->
   <section class="notes">
     <h3>How this one runs</h3>
     <ul>
-      <li><strong>Start a stopwatch</strong> when you begin Step 1.</li>
-      <li>Each step shows a <strong>T+ time</strong> from that start point.</li>
-      <li>Times are guidance — trust your nose more than the clock.</li>
+      <li><strong>Start a stopwatch</strong> when you begin the prep step.</li>
+      <li>Each step uses a <strong>T+ time</strong> relative to that start.</li>
+      <li>Add any sequencing / structural notes here.</li>
     </ul>
   </section>
 
-  <!-- =========================
-       INGREDIENTS
-       ========================= -->
+  <!-- Ingredients -->
   <section>
     <h3>Ingredients</h3>
 
@@ -58,85 +73,72 @@
       <table class="ingredients">
         <thead>
           <tr>
-            <th style="width: 20%;">Qty</th>
+            <th style="width:20%;">Qty</th>
             <th>Ingredient</th>
-            <th style="width: 35%;">Notes</th>
+            <th style="width:35%;">Notes</th>
           </tr>
         </thead>
         <tbody>
 
+          <!-- Copy rows as needed -->
           <tr>
-            <td><!-- g / ml / tsp --></td>
-            <td><!-- Ingredient name --></td>
-            <td><!-- Optional notes --></td>
+            <td>XX g</td>
+            <td>Ingredient name</td>
+            <td>Prep notes / alternatives / intent</td>
           </tr>
 
-          <!-- duplicate rows as needed -->
+          <tr>
+            <td>to taste</td>
+            <td>Salt</td>
+            <td>Always</td>
+          </tr>
 
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- =========================
-       METHOD (TIMED)
-       ========================= -->
+  <!-- Method -->
   <section>
     <h3>Method (timed)</h3>
     <p class="small-muted"><strong>Start the stopwatch now.</strong></p>
 
     <ol class="timed-steps">
 
-      <!-- STEP -->
+      <!-- Step template -->
       <li>
         <div class="step-head">
           <span class="t">T+00:00</span>
-          <div class="step-title"><!-- Step title --></div>
+          <div class="step-title">Step title</div>
         </div>
 
         <div class="step-body">
           <p>
-            <!-- Clear, concise instruction. One thing at a time. -->
+            Describe exactly what to do in plain, unambiguous terms.
           </p>
 
           <details class="why">
             <summary>Why?</summary>
             <p>
-              <!-- Technical reasoning.
-                   This is where you explain heat, moisture, chemistry,
-                   sequencing, texture, flavour extraction, etc.
-                   Write it for Future You. -->
+              Explain the reasoning, trade-offs, failure modes, or physics.
+              This is the point of the site.
             </p>
           </details>
         </div>
       </li>
 
-      <!-- duplicate steps as needed -->
+      <!-- Duplicate steps as needed -->
 
     </ol>
   </section>
 
-  <!-- =========================
-       TASTE / TROUBLESHOOTING
-       ========================= -->
+  <!-- Taste cues / notes -->
   <section class="notes">
     <h3>Taste cues</h3>
     <ul>
-      <li>
-        <strong>Mid-cook:</strong>
-        <!-- What it should smell / taste like at a key moment -->
-      </li>
-      <li>
-        <strong>Before serving:</strong>
-        <!-- How to know if it needs acid / salt / fat -->
-      </li>
+      <li>What should it smell / taste / look like at key moments.</li>
+      <li>How to correct it if something feels off.</li>
     </ul>
-
-    <p class="small-muted">
-      If it tastes good but a bit flat, it probably wants acid.
-      If it tastes sharp, it probably wants fat or time.
-      Don’t overthink it.
-    </p>
   </section>
 
 </main>
