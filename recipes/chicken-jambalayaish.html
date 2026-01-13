@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../css/styles.css" />
 
-  <!-- Local-only styling to make the ingredients table not mingin -->
+  <!-- Local-only styling -->
   <style>
     .table-wrap { overflow-x: auto; }
 
@@ -57,6 +57,14 @@
       font-weight: 600;
     }
 
+    .callout {
+      border-left: 5px solid #000;
+      background: rgba(0,0,0,0.04);
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-weight: 600;
+    }
+
     .disclaimer {
       border-left: 4px solid rgba(0,0,0,0.18);
       padding-left: 12px;
@@ -98,13 +106,20 @@
     <span>⏱️ Expected total time: <strong>35–40 minutes</strong></span>
   </section>
 
-  <!-- Disclaimer -->
-  <section class="notes disclaimer">
-    <h3>Disclaimer</h3>
-    <p><strong>I have no chef qualifications.</strong> I just make stuff I like, and it tastes nice to me.</p>
-    <p>Follow your nose, adjust as you go, and make the food you actually want to eat. That’s the whole point.</p>
+  <!-- PRECISION CALLOUT -->
+  <section class="callout">
+    Weigh your shit. Ratios matter.<br>
+    Eyeballing is how you end up with “almost right” food.
   </section>
 
+  <!-- DISCLAIMER -->
+  <section class="notes disclaimer">
+    <h3>Disclaimer</h3>
+    <p><strong>I have no chef qualifications.</strong> I make food I like, and it tastes good to me.</p>
+    <p>Follow your nose, adjust as you go, and make the food you actually want to eat.</p>
+  </section>
+
+  <!-- START HERE -->
   <section class="notes">
     <h3>Start Here</h3>
     <ul>
@@ -117,12 +132,9 @@
     </ul>
   </section>
 
-  <!-- =========================
-       INGREDIENTS
-       ========================= -->
+  <!-- INGREDIENTS -->
   <section>
     <h3>Ingredients</h3>
-
     <div class="table-wrap">
       <table class="ingredients">
         <thead>
@@ -133,114 +145,26 @@
           </tr>
         </thead>
         <tbody>
-
-          <tr>
-            <td>~230 g</td>
-            <td>Chicken breast</td>
-            <td>Cut into 2–3 cm chunks</td>
-          </tr>
-
-          <tr>
-            <td>75 g</td>
-            <td>Rice</td>
-            <td>Basmati preferably, long grain might work, meh.</td>
-          </tr>
-
-          <tr>
-            <td>~150 ml</td>
-            <td>Chicken stock</td>
-            <td>Hot</td>
-          </tr>
-
-          <tr>
-            <td>½</td>
-            <td>Red onion</td>
-            <td>Finely diced</td>
-          </tr>
-
-          <tr>
-            <td>½</td>
-            <td>Yellow pepper</td>
-            <td>Finely diced (colour innit)</td>
-          </tr>
-
-          <tr>
-            <td>½ stick</td>
-            <td>Celery</td>
-            <td>Finely diced</td>
-          </tr>
-
-          <tr>
-            <td>80–120 g</td>
-            <td>Mushrooms</td>
-            <td>Sliced; in early, out, then back in later</td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>Big-ass red chillies</td>
-            <td>Deseeded, finely chopped (early)</td>
-          </tr>
-
-          <tr>
-            <td>5–6</td>
-            <td>Little green chillies</td>
-            <td>Thai finger ones or similar, finely chopped (late)</td>
-          </tr>
-
-          <tr>
-            <td>¾ tsp</td>
-            <td>Smoked paprika</td>
-            <td>Main flavour backbone</td>
-          </tr>
-
-          <tr>
-            <td>~⅛ tsp</td>
-            <td>MSG</td>
-            <td>Optional, but helpful</td>
-          </tr>
-
-          <tr>
-            <td>To taste</td>
-            <td>Salt</td>
-            <td>Go light early</td>
-          </tr>
-
-          <tr>
-            <td>40–50 g</td>
-            <td>Black pudding</td>
-            <td>
-              Some cut into chunks (folded through),
-              some into ultra-thin strips (crisps for topping)
-            </td>
-          </tr>
-
-          <tr>
-            <td>1</td>
-            <td>Egg</td>
-            <td>Frozen solid overnight, peeled under running water</td>
-          </tr>
-
-          <tr>
-            <td>To finish</td>
-            <td>White wine vinegar or lemon</td>
-            <td>Acid to lift everything</td>
-          </tr>
-
-          <tr>
-            <td>Optional</td>
-            <td>Pickled chillies, spring onions, lemon zest</td>
-            <td>Garnish + makes it look intentional</td>
-          </tr>
-
+          <tr><td>~230 g</td><td>Chicken breast</td><td>Cut into 2–3 cm chunks</td></tr>
+          <tr><td>75 g</td><td>Rice</td><td>Basmati preferably; long grain might work</td></tr>
+          <tr><td>~150 ml</td><td>Chicken stock</td><td>Hot</td></tr>
+          <tr><td>½</td><td>Red onion</td><td>Finely diced</td></tr>
+          <tr><td>½</td><td>Yellow pepper</td><td>Finely diced (colour innit)</td></tr>
+          <tr><td>½ stick</td><td>Celery</td><td>Finely diced</td></tr>
+          <tr><td>80–120 g</td><td>Mushrooms</td><td>In early, out, then back in</td></tr>
+          <tr><td>2</td><td>Big-ass red chillies</td><td>Deseeded, finely chopped (early)</td></tr>
+          <tr><td>5–6</td><td>Little green chillies</td><td>Finely chopped (late)</td></tr>
+          <tr><td>¾ tsp</td><td>Smoked paprika</td><td>Main flavour backbone</td></tr>
+          <tr><td>~⅛ tsp</td><td>MSG</td><td>Optional but helpful</td></tr>
+          <tr><td>40–50 g</td><td>Black pudding</td><td>Chunks + ultra-thin strips</td></tr>
+          <tr><td>1</td><td>Egg</td><td>Frozen overnight, peeled under running water</td></tr>
+          <tr><td>To finish</td><td>White wine vinegar or lemon</td><td>Acid to lift everything</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- =========================
-       METHOD (TIMED)
-       ========================= -->
+  <!-- METHOD -->
   <section>
     <h3>Method (timed)</h3>
     <p class="small-muted"><strong>Start the stopwatch now.</strong></p>
@@ -248,253 +172,131 @@
     <ol class="timed-steps">
 
       <li>
-        <div class="step-head">
-          <span class="t">T+00:00</span>
-          <div class="step-title">Prep everything</div>
-        </div>
+        <div class="step-head"><span class="t">T+00:00</span><div class="step-title">Prep everything</div></div>
         <div class="step-body">
           <p>
             Dice <strong>½ red onion</strong>, <strong>½ yellow pepper</strong>, <strong>½ stick celery</strong>.
             Slice <strong>80–120 g mushrooms</strong>.
-            Chop <strong>2 big-ass red chillies</strong> (deseeded) and
-            <strong>5–6 little green chillies</strong>.
+            Chop <strong>2 big-ass red chillies</strong> and <strong>5–6 little green chillies</strong>.
             Cut <strong>40–50 g black pudding</strong> into chunks and ultra-thin strips.
-            Cube <strong>~230 g chicken</strong>.
-            Heat <strong>~150 ml stock</strong>.
+            Cube <strong>~230 g chicken</strong>. Heat <strong>~150 ml stock</strong>.
           </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Prep first = calm cooking later.</p>
-          </details>
+          <details class="why"><summary>Why?</summary><p>Prep first = calm cooking.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+08:00</span>
-          <div class="step-title">Sweat the base</div>
-        </div>
+        <div class="step-head"><span class="t">T+08:00</span><div class="step-title">Sweat the base</div></div>
         <div class="step-body">
           <p>
-            Medium heat, oil.
-            Add the diced <strong>½ red onion</strong>, <strong>½ yellow pepper</strong>, <strong>½ stick celery</strong> + pinch of salt.
+            Medium heat, oil. Add onion, pepper, celery + salt.
             Sweat until soft.
           </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Sweet base without browning.</p>
-          </details>
+          <details class="why"><summary>Why?</summary><p>Sweet base without browning.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+12:00</span>
-          <div class="step-title">Mushrooms in</div>
-        </div>
+        <div class="step-head"><span class="t">T+12:00</span><div class="step-title">Mushrooms in</div></div>
         <div class="step-body">
-          <p>
-            Add <strong>80–120 g mushrooms</strong>. Cook until moisture’s gone and they start to colour.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Flavour now, texture later.</p>
-          </details>
+          <p>Add mushrooms. Cook until moisture’s gone and they colour.</p>
+          <details class="why"><summary>Why?</summary><p>Flavour now, texture later.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+14:00</span>
-          <div class="step-title">Red chillies</div>
-        </div>
+        <div class="step-head"><span class="t">T+14:00</span><div class="step-title">Red chillies</div></div>
         <div class="step-body">
-          <p>
-            Add <strong>2 chopped big-ass red chillies</strong>. Cook 1 minute.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Early heat mellows.</p>
-          </details>
+          <p>Add red chillies. Cook 1 minute.</p>
+          <details class="why"><summary>Why?</summary><p>Early heat mellows.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+15:00</span>
-          <div class="step-title">Paprika + MSG</div>
-        </div>
+        <div class="step-head"><span class="t">T+15:00</span><div class="step-title">Paprika + MSG</div></div>
         <div class="step-body">
-          <p>
-            Add <strong>¾ tsp smoked paprika</strong> and <strong>~⅛ tsp MSG</strong>. Stir briefly.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Wake the spice without burning it.</p>
-          </details>
+          <p>Add paprika and MSG. Stir briefly.</p>
+          <details class="why"><summary>Why?</summary><p>Wake spice, don’t burn it.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+15:30</span>
-          <div class="step-title">Remove mushrooms</div>
-        </div>
+        <div class="step-head"><span class="t">T+15:30</span><div class="step-title">Remove mushrooms</div></div>
         <div class="step-body">
-          <p>
-            Scoop mushrooms out and hold.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>They go back in later so they stay decent.</p>
-          </details>
+          <p>Scoop mushrooms out and hold.</p>
+          <details class="why"><summary>Why?</summary><p>They go back later.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+16:30</span>
-          <div class="step-title">Chicken</div>
-        </div>
+        <div class="step-head"><span class="t">T+16:30</span><div class="step-title">Chicken</div></div>
         <div class="step-body">
-          <p>
-            Add <strong>~230 g chicken</strong>. Stir until just opaque.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Coat, don’t brown.</p>
-          </details>
+          <p>Add chicken. Stir until just opaque.</p>
+          <details class="why"><summary>Why?</summary><p>Coat, don’t brown.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+18:30</span>
-          <div class="step-title">Rice</div>
-        </div>
+        <div class="step-head"><span class="t">T+18:30</span><div class="step-title">Rice</div></div>
         <div class="step-body">
-          <p>
-            Add <strong>75 g rice</strong>. Stir to coat.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Even absorption.</p>
-          </details>
+          <p>Add rice. Stir to coat.</p>
+          <details class="why"><summary>Why?</summary><p>Even absorption.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+19:30</span>
-          <div class="step-title">Stock & simmer</div>
-        </div>
+        <div class="step-head"><span class="t">T+19:30</span><div class="step-title">Stock & simmer</div></div>
         <div class="step-body">
-          <p>
-            Add <strong>~150 ml stock</strong>. Gentle simmer, lid on.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Rice cooks properly, not mushy.</p>
-          </details>
+          <p>Add stock. Gentle simmer, lid on.</p>
+          <details class="why"><summary>Why?</summary><p>Rice cooks properly.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+28:00</span>
-          <div class="step-title">Black pudding</div>
-        </div>
+        <div class="step-head"><span class="t">T+28:00</span><div class="step-title">Black pudding</div></div>
         <div class="step-body">
-          <p>
-            In a separate pan: fry the <strong>black pudding chunks</strong> and the <strong>ultra-thin strips</strong> separately.
-            Keep strips for topping.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Rich inside, crunch on top.</p>
-          </details>
+          <p>Fry chunks and ultra-thin strips separately.</p>
+          <details class="why"><summary>Why?</summary><p>Rich inside, crunch on top.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+30:00</span>
-          <div class="step-title">Green chillies</div>
-        </div>
+        <div class="step-head"><span class="t">T+30:00</span><div class="step-title">Green chillies</div></div>
         <div class="step-body">
-          <p>
-            Stir in <strong>5–6 little green chillies</strong>.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Fresh heat.</p>
-          </details>
+          <p>Stir in green chillies.</p>
+          <details class="why"><summary>Why?</summary><p>Fresh heat.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+31:00</span>
-          <div class="step-title">Egg</div>
-        </div>
+        <div class="step-head"><span class="t">T+31:00</span><div class="step-title">Egg</div></div>
         <div class="step-body">
-          <p>
-            Peel frozen <strong>1 egg</strong> under the tap. Slice into discs.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>More yolk, less white.</p>
-          </details>
+          <p>Peel egg under tap. Slice.</p>
+          <details class="why"><summary>Why?</summary><p>More yolk, less white.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+33:00</span>
-          <div class="step-title">Fry egg</div>
-        </div>
+        <div class="step-head"><span class="t">T+33:00</span><div class="step-title">Fry egg</div></div>
         <div class="step-body">
-          <p>
-            Fry gently until whites set.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Keeps them intact.</p>
-          </details>
+          <p>Fry gently until whites set.</p>
+          <details class="why"><summary>Why?</summary><p>Keeps them intact.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+36:00</span>
-          <div class="step-title">Combine & finish</div>
-        </div>
+        <div class="step-head"><span class="t">T+36:00</span><div class="step-title">Combine & finish</div></div>
         <div class="step-body">
-          <p>
-            Fold mushrooms and black pudding chunks back in. Kill heat.
-            Add <strong>white wine vinegar or lemon</strong> to taste.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Acid lifts everything.</p>
-          </details>
+          <p>Fold mushrooms and black pudding chunks back in. Add acid to taste.</p>
+          <details class="why"><summary>Why?</summary><p>Acid lifts everything.</p></details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+38:00</span>
-          <div class="step-title">Plate</div>
-        </div>
+        <div class="step-head"><span class="t">T+38:00</span><div class="step-title">Plate</div></div>
         <div class="step-body">
-          <p>
-            Mound rice. Egg on top. Black pudding crisps on/around egg.
-            Optional garnish if you care.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>Height + contrast = looks deliberate.</p>
-          </details>
+          <p>Mound rice. Egg on top. Crisps on/around egg.</p>
+          <details class="why"><summary>Why?</summary><p>Looks deliberate, tastes better.</p></details>
         </div>
       </li>
 
@@ -509,3 +311,4 @@
 
 </body>
 </html>
+
