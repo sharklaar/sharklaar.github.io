@@ -15,13 +15,31 @@
 
 <main class="recipe-card">
 
+  <nav class="breadcrumb">
+    <a href="../index.html" class="home-link">← Back to the recipe locker</a>
+  </nav>
+
   <h2>Chicken, Chilli & Black Pudding<br>Jambalaya-ish Rice (mini fried egg slices)</h2>
 
   <img
     src="../images/chicken-jambalayaish.jpg"
-    alt="Chicken, chilli and black pudding jambalaya-style rice with crispy black pudding and mini fried egg slices"
+    alt="Chicken, chilli and black pudding jambalaya-style rice with mushrooms, crispy black pudding and mini fried egg slices"
     class="recipe-image"
   />
+
+  <section class="notes disclaimer">
+    <h3>A quick note</h3>
+    <p>
+      I’m not a trained or qualified chef. I’ve never worked in a professional kitchen,
+      and my presentation still needs work. This site exists because I’m on a learning
+      journey — cooking, tasting, screwing things up, fixing them, and trying to get
+      better as I go.
+    </p>
+    <p>
+      What I do take seriously is understanding <strong>why</strong> things work.
+      If this sounds over-analysed, that’s deliberate.
+    </p>
+  </section>
 
   <section class="meta">
     <span>🍽️ Serves: 1–2</span>
@@ -34,26 +52,12 @@
     <ul>
       <li><strong>Start a stopwatch</strong> when you begin the prep step.</li>
       <li>Each step uses a <strong>T+ time</strong> relative to that start.</li>
-      <li>Black pudding does two jobs here: <strong>most folded through, some reserved for garnish</strong>.</li>
+      <li>
+        Black pudding does two jobs here:
+        <strong>most folded through, some reserved for garnish</strong>.
+      </li>
     </ul>
   </section>
-
-  <section class="notes disclaimer">
-  <h3>A quick note</h3>
-  <p>
-    I’m not a trained or qualified chef. I’ve never worked in a professional kitchen,
-    and my presentation still needs work. This site exists because I’m on a learning
-    journey — cooking, tasting, screwing things up, fixing them, and trying to get
-    better over time.
-  </p>
-  <p>
-    What I <em>do</em> take seriously is understanding <strong>why</strong> things work,
-    not just following steps. If something here sounds over-analysed, that’s deliberate.
-    It’s me writing down what I’ve learnt so future-me (and maybe you) can repeat the
-    good bits and avoid the mistakes.
-  </p>
-</section>
-
 
   <section>
     <h3>Ingredients</h3>
@@ -68,20 +72,16 @@
           </tr>
         </thead>
         <tbody>
+
           <tr><td>~230 g</td><td>Chicken breast</td><td>Thighs give more margin for error</td></tr>
-          <tr><td>75 g</td><td>Basmati rice</td><td></td></tr>
-          <tr><td>~150 ml</td><td>Chicken stock</td><td>Hot; pan-dependent</td></tr>
+          <tr><td>75 g</td><td>Basmati rice</td><td>Long grain is probably fine too, but I haven’t tried it</td></tr>
+          <tr><td>~150 ml</td><td>Chicken bone broth</td><td>Stock is fine if you don’t have bone broth</td></tr>
 
           <tr><td>1</td><td>Onion</td><td>Finely chopped</td></tr>
           <tr><td>1 stick</td><td>Celery</td><td>Small dice</td></tr>
           <tr><td>½</td><td>Red pepper</td><td>Small dice</td></tr>
 
-          <tr>
-  <td>~80–100 g</td>
-  <td>Mushrooms</td>
-  <td>Sliced, cooked separately until moisture is driven off</td>
-</tr>
-          <tr><td>¾ tsp</td><td>Smoked paprika</td><td>Sweet, not hot</td></tr>
+          <tr><td>¾ tsp</td><td>Hot smoked paprika</td><td>Yes, hot — intentional</td></tr>
 
           <tr>
             <td>~60 g</td>
@@ -92,23 +92,30 @@
             </td>
           </tr>
 
-          <tr><td>to taste</td><td>Fresh chillies</td><td>Some early (deseeded), some late (seeded)</td></tr>
+          <tr><td>2</td><td>Large red chillies</td><td>Deseeded, finely chopped — early addition</td></tr>
+          <tr>
+            <td>5</td>
+            <td>Thai green finger chillies</td>
+            <td>
+              With seeds, sliced into small rounds.
+              Chosen for fresh heat and colour contrast.
+            </td>
+          </tr>
+
+          <tr><td>~80–100 g</td><td>Mushrooms</td><td>Sliced; cooked separately until moisture is driven off</td></tr>
           <tr><td>to taste</td><td>Salt &amp; black pepper</td><td>Add incrementally</td></tr>
           <tr><td>⅛ tsp</td><td>MSG (optional)</td><td>Structure, not “cheating”</td></tr>
-          <tr><td>10 g</td><td>Butter</td><td>Finish</td></tr>
+          <tr><td>10 g</td><td>Butter</td><td>Used only to lift the mushrooms</td></tr>
           <tr><td>1–2 tsp</td><td>White wine vinegar</td><td>Final acid lift</td></tr>
 
           <tr>
             <td>1</td>
             <td>Egg</td>
-            <td><strong>Frozen overnight</strong> (raw in shell), sliced for “mini fried eggs”</td>
+            <td><strong>Frozen overnight</strong> (raw in shell), sliced into mini fried eggs</td>
           </tr>
 
-          <tr>
-            <td>1</td>
-            <td>Lemon</td>
-            <td>Zest for garnish; a small squeeze of juice at the end</td>
-          </tr>
+          <tr><td>1</td><td>Lemon</td><td>Zest for garnish, small squeeze of juice at the end</td></tr>
+
         </tbody>
       </table>
     </div>
@@ -121,215 +128,139 @@
     <ol class="timed-steps">
 
       <li>
-        <div class="step-head">
-          <span class="t">T+00:00</span>
-          <div class="step-title">Prep everything</div>
-        </div>
+        <div class="step-head"><span class="t">T+00:00</span><div class="step-title">Prep everything</div></div>
         <div class="step-body">
           <p>
-            Dice all veg as listed. From the black pudding, slice <strong>most</strong> into small thin chunks.
+            Dice all veg. Slice most of the black pudding into small thin chunks.
             Reserve a small portion and slice it into <strong>the thinnest strips you can manage without breaking</strong>.
-            Get everything laid out before turning the heat on. Slice the mushrooms ready to cook separately.
+            Slice the mushrooms ready to cook separately.
           </p>
           <details class="why">
             <summary>Why?</summary>
             <p>
-              This dish has short windows where hesitation ruins things: aromatics bloom fast, chicken goes rubbery if you overdo it,
-              and rice hydration is unforgiving. Prep first means you’re executing, not reacting.
+              The dish moves quickly once heat is on. Prep first removes hesitation.
+              Splitting the black pudding gives you depth <em>and</em> crunch rather than having to choose.
             </p>
-            <p>
-              Splitting the black pudding gives you two different textural roles:
-              chunky bits to fold through for savoury depth across the whole dish,
-              and ultra-thin strips that can crisp hard and survive as a garnish.
-              Treat it all the same and you either lose crunch or lose distribution.
-            </p>
-            <p>Mushrooms hold a lot of water. Cooking them separately lets you drive that off before they ever see the rice. If you add them raw to the main pan, they dump liquid, dilute flavour, and push the rice toward mush.</p>
           </details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+05:00</span>
-          <div class="step-title">Crisp the black pudding</div>
-        </div>
+        <div class="step-head"><span class="t">T+05:00</span><div class="step-title">Crisp the black pudding</div></div>
         <div class="step-body">
           <p>
-            Fry all the black pudding pieces in a little oil over medium heat until crisp.
-            Remove to a plate. <strong>Separate the ultra-thin strips</strong> and keep them pristine for garnish.
-            Keep the fat in the pan.
+            Fry all the black pudding until crisp. Remove to a plate.
+            Separate the ultra-thin strips for garnish. Keep the fat in the pan.
           </p>
           <details class="why">
             <summary>Why?</summary>
             <p>
-              Rendering black pudding early gives you a fat rich in savoury compounds that seasons everything cooked in it afterwards.
-              That’s deeper than “add more salt later”.
-            </p>
-            <p>
-              The chunkier pieces can be folded through the rice later for distribution.
-              The ultra-thin strips crisp harder and faster — keeping them separate preserves a brittle crunch you can’t recover once they soften.
+              This renders fat that seasons everything downstream.
+              Thin strips crisp harder — keep them pristine.
             </p>
           </details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+10:00</span>
-          <div class="step-title">Base veg</div>
-        </div>
+        <div class="step-head"><span class="t">T+07:00</span><div class="step-title">Cook the mushrooms</div></div>
         <div class="step-body">
           <p>
-            Add onion, celery and pepper with a pinch of salt. Cook until softened and lightly sweet — don’t scorch it.
+            Cook mushrooms in the same pan until their moisture is fully driven off.
+            Add the butter at the end to lift them. Reserve with the black pudding chunks.
           </p>
           <details class="why">
             <summary>Why?</summary>
             <p>
-              This stage removes harsh raw flavours and replaces them with sweetness and body.
-              If you rush it, the finished dish always tastes slightly unfinished.
+              Mushrooms dump water. Cooking them separately keeps rice texture under control
+              while still adding umami.
             </p>
           </details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+17:00</span>
-          <div class="step-title">Aromatics</div>
-        </div>
+        <div class="step-head"><span class="t">T+10:00</span><div class="step-title">Base veg</div></div>
         <div class="step-body">
-          <p>
-            Add garlic, smoked paprika and early chillies. Stir constantly for 30–60 seconds until fragrant.
-          </p>
+          <p>Add onion, celery and pepper with a pinch of salt. Cook until softened and sweet.</p>
           <details class="why">
             <summary>Why?</summary>
-            <p>
-              Garlic and paprika bloom quickly but burn even quicker. This brief window extracts flavour without bitterness.
-              If it smells acrid, you’ve gone too far.
-            </p>
+            <p>Undercook this and the dish tastes raw no matter what you do later.</p>
           </details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+18:30</span>
-          <div class="step-title">Chicken</div>
+        <div class="step-head"><span class="t">T+17:00</span><div class="step-title">Spices & chillies</div></div>
+        <div class="step-body">
+          <p>Add paprika and red chillies. Stir for 30–60 seconds until fragrant.</p>
+          <details class="why">
+            <summary>Why?</summary>
+            <p>Blooming spices briefly avoids bitterness while unlocking flavour.</p>
+          </details>
         </div>
+      </li>
+
+      <li>
+        <div class="step-head"><span class="t">T+18:30</span><div class="step-title">Chicken</div></div>
         <div class="step-body">
           <p>Add chicken and stir until just sealed.</p>
           <details class="why">
             <summary>Why?</summary>
-            <p>
-              Sealing firms the outside so the chicken survives simmering without going woolly.
-              You’re setting texture, not chasing colour.
-            </p>
+            <p>Firms texture so it survives the simmer.</p>
           </details>
         </div>
       </li>
 
       <li>
-        <div class="step-head">
-          <span class="t">T+22:00</span>
-          <div class="step-title">Rice &amp; stock</div>
+        <div class="step-head"><span class="t">T+22:00</span><div class="step-title">Rice & bone broth</div></div>
+        <div class="step-body">
+          <p>Add rice, then bone broth to just cover. Gentle simmer, lid mostly on.</p>
+          <details class="why">
+            <summary>Why?</summary>
+            <p>Even hydration, defined grains.</p>
+          </details>
         </div>
+      </li>
+
+      <li>
+        <div class="step-head"><span class="t">T+30:00</span><div class="step-title">Thai green chillies</div></div>
+        <div class="step-body">
+          <p>Add green chillies when rice is close to done.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="step-head"><span class="t">T+34:00</span><div class="step-title">Mini fried egg slices</div></div>
         <div class="step-body">
           <p>
-            Stir in the basmati rice, then add hot stock to just cover. Gentle simmer, lid mostly on.
+            Peel the frozen egg under a cold tap. Slice into rounds and fry gently until just set.
+          </p>
+          <details class="why">
+            <summary>Why?</summary>
+            <p>Freezing allows slicing, giving yolk distribution without excess white.</p>
+          </details>
+        </div>
+      </li>
+
+      <li>
+        <div class="step-head"><span class="t">T+36:00</span><div class="step-title">Finish & plate</div></div>
+        <div class="step-body">
+          <p>
+            Off the heat, stir in white wine vinegar and a small squeeze of lemon juice.
+            Fold mushrooms and black pudding chunks through.
+            Plate, top with egg slices, crispy black pudding strips and lemon zest.
           </p>
           <details class="why">
             <summary>Why?</summary>
             <p>
-              Basmati gives you defined grains and a cleaner finish. Coating it in fat delays starch release;
-              gentle heat gives even hydration instead of gluey porridge.
-            </p>
-          </details>
-        </div>
-      </li>
-
-      <li>
-        <div class="step-head">
-          <span class="t">T+30:00</span>
-          <div class="step-title">Late chillies</div>
-        </div>
-        <div class="step-body">
-          <p>Add the late (seeded) chillies when the rice is close.</p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>
-              Late chillies keep a brighter top-note. Add them early and you cook away the interesting flavour,
-              leaving only blunt heat.
-            </p>
-          </details>
-        </div>
-      </li>
-
-      <li>
-        <div class="step-head">
-          <span class="t">T+34:00</span>
-          <div class="step-title">Mini fried egg slices</div>
-        </div>
-        <div class="step-body">
-          <p>
-            Take the egg you froze overnight out of the freezer. Crack and peel it.
-            <strong>Run it under the cold tap while peeling</strong> to help the shell come away cleanly.
-            Slice into rounds, then fry gently in a little oil/butter until set. Reserve for plating.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>
-              Freezing isn’t for drama — it’s for control. A normal fried egg gives you one yolk blob and loads of white,
-              which is annoying when you want yolk distributed across a bowl.
-            </p>
-            <p>
-              Frozen egg becomes sliceable. Frying discs gives you “mini fried eggs”: yolk and white in each slice,
-              so every bite can get a bit of yolk without needing two eggs and ending up drowning in white.
-            </p>
-            <p>
-              The cold tap helps the shell separate from the frozen albumen so you don’t tear chunks out of it and ruin the slices.
-            </p>
-          </details>
-        </div>
-      </li>
-
-      <li>
-        <div class="step-head">
-          <span class="t">T+36:00</span>
-          <div class="step-title">Finish &amp; plate</div>
-        </div>
-        <div class="step-body">
-          <p>
-            Off the heat, stir in butter and <strong>white wine vinegar</strong>. Add a <strong>small squeeze of lemon juice</strong>.
-            Taste and adjust seasoning.
-            Fold the <strong>chunky</strong> black pudding pieces through the rice.
-            Plate, top with the mini egg slices, then finish with the <strong>ultra-crispy black pudding strips</strong> and a
-            <strong>sprinkle of lemon zest</strong>.
-          </p>
-          <details class="why">
-            <summary>Why?</summary>
-            <p>
-              Butter rounds and emulsifies; vinegar lifts. The tiny squeeze of lemon juice is an extra “fresh top note” that reads as brightness,
-              not as “lemony”. It should make you go “oh nice” rather than “that’s lemon”.
-            </p>
-            <p>
-              Folding chunky black pudding through distributes savoury depth across the whole dish. Keeping the thinnest strips for garnish preserves
-              brittle crunch — that contrast is what stops this becoming a single-texture beige bowl.
-            </p>
-            <p>
-              Lemon zest is aroma, not acidity. It hits your nose first, which makes the whole dish feel brighter without watering it down.
+              Acid wakes it up; zest hits the nose; crunch stays crunch.
             </p>
           </details>
         </div>
       </li>
 
     </ol>
-  </section>
-
-  <section class="notes">
-    <h3>Taste cues</h3>
-    <ul>
-      <li><strong>Before serving:</strong> flat = a touch more vinegar; sharp = a touch more butter.</li>
-    </ul>
   </section>
 
 </main>
