@@ -257,3 +257,7 @@ li {
   }
 }
 
+.disclaimer {
+  border-left-color: rgba(29,53,87,0.6);
+  background: rgba(29,53,87,0.04);
+}
