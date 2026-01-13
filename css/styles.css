@@ -180,3 +180,80 @@ li {
   margin: 10px 0 0;
   opacity: 0.9;
 }
+
+/* =========================
+   Ingredients table styling
+   ========================= */
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 12px 0 24px;
+}
+
+.ingredients {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+
+.ingredients thead th {
+  background: linear-gradient(
+    to bottom,
+    rgba(29,53,87,0.08),
+    rgba(29,53,87,0.02)
+  );
+  color: var(--secondary);
+  font-weight: 900;
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 2px solid rgba(230,57,70,0.6);
+}
+
+.ingredients tbody td {
+  padding: 12px 14px;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(29,53,87,0.10);
+}
+
+/* Remove final border */
+.ingredients tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Qty column */
+.ingredients td:first-child {
+  font-weight: 900;
+  white-space: nowrap;
+  color: rgba(29,53,87,0.95);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ingredient name column */
+.ingredients td:nth-child(2) {
+  font-weight: 700;
+}
+
+/* Notes column */
+.ingredients td:last-child {
+  color: rgba(0,0,0,0.75);
+  font-size: 0.9rem;
+}
+
+/* Row hover – subtle, not wanky */
+.ingredients tbody tr:hover {
+  background: rgba(29,53,87,0.04);
+}
+
+/* Mobile tightening */
+@media (max-width: 520px) {
+  .ingredients thead th,
+  .ingredients tbody td {
+    padding: 10px 10px;
+  }
+}
+
